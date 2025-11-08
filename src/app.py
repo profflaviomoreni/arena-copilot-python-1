@@ -10,6 +10,8 @@ def main():
         ("soma_intervalos", soma_intervalos, [[(1,5),(3,7),(10,11)]]),
     ]
 
+    # Executa e imprime os resultados dos exemplos
+
     for nome, fn, args in exemplos:
         try:
             resultado = fn(*args) if isinstance(args, list) else fn(args)
