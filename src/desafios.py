@@ -13,6 +13,7 @@ def eh_palindromo(texto: str) -> bool:
     s = re.sub(r"[^a-z0-9]", "", s)
     return s == s[::-1]
 
+
 def intersecao_unica(lista1: Iterable, lista2: Iterable) -> List:
     set1, set2 = set(lista1), set(lista2)
     inter = sorted(set1 & set2)
